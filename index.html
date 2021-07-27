@@ -1,55 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>POLL</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <title>CHAT APP</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/chat.css" />
     </head>
     <body>
-        <div class="wrapper">
-            <header>Poll</header>
-            <h6>What should be timing for tomorrow's class ?</h6>
-            <hr solid>
-            <div class="poll-area">
-                <label for="">
-                    <div class="row">
-                        <div class="column">
-                            <span class="circle"></span>
-                            <span class="text">After 5pm</span>
-                        </div>
-                        <span class="percent">80%</span>
+        <div id="chat-container">
+            <div id="search-container">
+                <input type="text" placeholder="Search" />
+            </div>
+            <div id="conversation-list">
+                <input type="text" placeholder="search" />
+            </div>
+            <div id="conversation-list">
+                <div class="conversation">
+                    <img src="images/profiles/SLS PS PHOTO.jpeg" alt="SIDWINI" />
+                    <div class="title-text">
+                        SIDWINI
                     </div>
-                    <div class="progress" style="--w:80;"></div>
-                </label>
-                <label for="">
-                    <div class="row">
-                        <div class="column">
-                            <span class="circle"></span>
-                            <span class="text">Before 5pm</span>
-                        </div>
-                        <span class="percent">20%</span>
+                    <div class="created-date">
+                        Jul 27
                     </div>
-                    <div class="progress" style="--w:20;"></div>
-                </label>
+                    <div class="conversation-message">
+                        Wow that's great
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/profiles/flower.jpg" alt="FLOWER" />
+                    <div class="title-text">
+                        FLOWER
+                    </div>
+                    <div class="created-date">
+                        Jul 25 
+                    </div>
+                    <div class="conversation-message">
+                        Really?
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/profiles/desirefoundation.jpg" alt="Desire Foundation" />
+                    <div class="title-text">
+                        Desire Foundation Group
+                    </div>
+                    <div class="created-date">
+                        Jul 23
+                    </div>
+                    <div class="conversation-message">
+                        Wow that's great news !
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/profiles/B.jpg" alt="Boss" />
+                    <div class="title-text">
+                        Boss
+                    </div>
+                    <div class="created-date">
+                        Jul 23
+                    </div>
+                    <div class="conversation-message">
+                        ok
+                    </div>
+                </div>
+                <div class="conversation ">
+                    <img src="images/profiles/C.jpg" alt="Charlie" />
+                    <div class="title-text">
+                        Charlie
+                    </div>
+                    <div class="created-date">
+                        Jul 22
+                    </div>
+                    <div class="conversation-message">
+                        Test Message
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/profiles/R.png" alt="Reshmi" />
+                    <div class="title-text">
+                        Reshmi
+                    </div>
+                    <div class="created-date">
+                        Jul 16
+                    </div>
+                    <div class="conversation-message">
+                        Test Message
+                    </div>
+                </div>
+            </div>
+            <div id="new-message-container">
+                <a href="#">+</a>
+
+            </div>
+            <div id="chat-title">
+                <span>SIDWINI</span>
+                <img src="images/profiles/trash.jpg" alt="Delete Conversation" />
+
+            </div>
+            <div id="chat-message-list">
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">wow that's great</div>
+                        <div class="message-time">Jul 27</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="images/profiles/SLS PS PHOTO.jpeg" alt="SIDWINI" />
+                        <div class="message-text">
+                             Im planning to be a full stack developer 
+                        </div>
+                        <div class="message-time">Jul 27</div>   
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">What is your goal ?</div>
+                        <div class="message-time">Jul 27 </div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="images/profiles/SLS PS PHOTO.jpeg" alt="SIDWINI" />
+                        <div class="message-text">see you there,bye !</div> 
+                        <div class="message-time">Jun 30</div>
+                    </div>
+                    <br>
+                    <div class="message-day">Today</div> 
+                <br>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">ok then</div>
+                        <div class="message-time">Jun 30</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="images/profiles/SLS PS PHOTO.jpeg" alt="SIDWINI" />
+                        <div class="message-text">
+                             yes sure
+                        </div>
+                        <div class="message-time">Jun 30</div>   
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">will meet at 5 ?</div>
+                        <div class="message-time">Jun 30</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="chat-form">
+                <img src="images/profiles/attatchment.png" alt="Add attatchment"/>
+                <input type="text" placeholder="type a message" />
             </div>
         </div>
-
-        <script>
-            const options = document.querySelectorAll("label");
-            for(let i = 0; i < options.length; i++) {
-                options[i].addEventListener("click",()=>{
-                    for(let k = 0; k < options.length; k++){
-                        if(options[k].classList.contains("selected")){
-                            options[k].classList.remove("selected");
-                        }
-                    }
-                    options[i].classList.add("selected");
-                    for(let j = 0; j < options.length; j++){
-                        options[j].classList.add("selectall");
-                    }
-                });
-            }
-        </script>
     </body>
 </html>
